@@ -112,6 +112,8 @@ nav .link-logo {
     display: flex;
     padding: 0 15px;
     justify-content: space-between;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+
 }
 
 .nav {
@@ -174,13 +176,14 @@ ul {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    background: var(--navyblue, #2E2F42);
     letter-spacing: 0.02em;
     padding: 188px 0;
-    display: flex;
+    background-size: cover;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)),
+        url(/images/decor/people-office.jpg);
 }
-
-
 
 .hero-title {
     font-size: 56px;
@@ -189,7 +192,6 @@ ul {
     margin: 0 316px;
     margin-bottom: 48px;
     text-align: center;
-
 }
 
 .hero-button-text,
@@ -259,7 +261,13 @@ ul {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+}
 
+.list-item-feature-image {
+    border-radius: 4px;
+    background: var(--cloud, #F4F4FD);
+    padding: 24px 100px;
+    margin-bottom: 8px;
 }
 
 /* Section 3 (Projects) */
@@ -293,6 +301,7 @@ ul {
 .team {
     background: var(--cloud, #F4F4FD);
     padding: 120px 0;
+
 }
 
 .team-title {
@@ -322,6 +331,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-item {
@@ -332,6 +342,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px;
+
 }
 
 .team-card-description {
@@ -346,6 +357,81 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-list-icons {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.team-list-icons-item {
+    background-image: url(/images/decor/icon/Ellipse.svg);
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    background-repeat: no-repeat;
+}
+
+/* Custumers */
+.custumers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.custumers-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue, #2E2F42);
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.custumers-list {
+    display: flex;
+    gap: 24px;
+}
+
+.custumers-list-item {
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid var(--lightslate, #8E8F99);
+
+}
+
+.custumers-sticky-list {
+    padding: 9px 9px 6px 11px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custumers-sticky-item-1 {
+    transform: translate(11px);
+    transform: translateY(12.52px);
+}
+
+.custumers-sticky-item-2 {
+    transform: translate(0px);
+    transform: translateY(19.96px);
+}
+
+.custumers-sticky-item-3 {
+    transform: translate(21.69px);
+    transform: translateY(0px);
+}
+
+.custumers-sticky-item-text {
+    color: var(--lightslate, #8E8F99);
+    font-size: 6px;
+    font-weight: 700;
+    line-height: normal;
 }
 
 /* Footer */
@@ -353,6 +439,11 @@ ul {
 .footer {
     background: var(--navyblue, #2E2F42);
     padding: 100px 0;
+    display: flex;
+
+}
+
+.footer-all {
     display: flex;
 }
 
@@ -366,11 +457,11 @@ ul {
     line-height: 1.17;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
-.footer-container {
-    width: 264px;
+.footer-logo {
+    margin-right: 120px;
 }
 
 .fotter-logo-text {
@@ -384,6 +475,27 @@ ul {
     font-weight: 400;
     text-transform: none;
     max-width: 264px;
+
+}
+
+.footer-list-icons-item {
+    background-image: url(/images/decor/icon/Ellipse.svg);
+    padding: 8px;
+    background-repeat: no-repeat;
+}
+
+.footer-social-title {
+    color: var(--white, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.footer-list-icons {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -399,7 +511,6 @@ ul {
     border: 1px solid var(--cornflower, #E7E9FC);
     background: var(--cloud, #F4F4FD);
     padding: 12px 24px;
-
 }
 
 
