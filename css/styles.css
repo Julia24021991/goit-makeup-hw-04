@@ -640,6 +640,9 @@ ul {
     fill: #2E2F42;
 }
 
+.close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .close-btn:hover,
 .close-btn:focus {
@@ -718,7 +721,7 @@ ul {
 .menu-apps-item-link:hover,
 .menu-apps-item-link:focus {
     transform: translateY(0%);
-
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .overlay-box {
@@ -745,9 +748,9 @@ ul {
 
 
 
-.menu-apps-item:hover .overlay {
+.menu-apps-item:hover .overlay,
+.menu-apps-item:focus .overlay {
     transform: translateY(0%);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
